@@ -1,15 +1,16 @@
-# digital_signal_processing_filters
+# Digital Signal Processing Filters
 
-These applications provide a graphical user interface (GUI) for applying a Finite Impulse Response (FIR) filter to WAV audio files and Infinite Impulse Response (IIR) filter respectively. Users can select a WAV file, import FIR/ IIR coefficients, apply the filter to the audio, and save the filtered audio back into a WAV file format.
+## Overview
+This project provides graphical user interface (GUI) applications to apply Finite Impulse Response (FIR) and Infinite Impulse Response (IIR) filters to WAV audio files. Users can load audio files, import filter coefficients, apply filters, and save the filtered audio as new WAV files.
 
-## Key aspects:
-Features
- - Load WAV audio files for processing.
- - Import filter coefficients from a file. 
- - Apply filter to the audio data. 
- - Save the filtered audio as a new WAV file.
+## Features:
 
-## Technical Details - characteristics of an FIR filter:
+ - Load WAV audio files for filtering
+ - Import filter coefficients from files 
+ - Apply filters to the audio data 
+ - Save filtered audio as new WAV files
+
+## Technical Details - FIR filter characteristicz:
 
  - Impulse Response: FIR filters are defined by their impulse response, which is finite because it settles to zero in a finite amount of time. This property is derived from the filter coefficients, which represent the impulse response directly.
 
@@ -33,4 +34,14 @@ It involves convoluting the audio signal with the FIR filter's impulse response,
 ## Applying IIR filter 
 It involves a recursive algorithm where past output samples are used along with current and past input samples to calculate the new output. This process is sensitive to coefficient quantization, which can significantly affect the filter's stability and performance. Audio signal is normalized before processing to prevent overflow and ensure that the filter operates within its linear range.
 
+## GUI
 
+Interactive buttons to:
+
+- Open WAV file
+
+- Import coefficients
+
+- Apply filter
+
+- Save filtered file
